@@ -1,0 +1,44 @@
+2018-10-20 11:55:13.067  INFO 22268 --- [quartzScheduler_Worker-3] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:55:13.440  INFO 22268 --- [quartzScheduler_Worker-3] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:55:13.441 DEBUG 22268 --- [quartzScheduler_Worker-3] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:55:13.441 DEBUG 22268 --- [quartzScheduler_Worker-3] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:55:32.279  INFO 22268 --- [quartzScheduler_Worker-4] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:55:32.282  INFO 22268 --- [quartzScheduler_Worker-4] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:55:32.282 DEBUG 22268 --- [quartzScheduler_Worker-4] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:55:32.282 DEBUG 22268 --- [quartzScheduler_Worker-4] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:56:02.278  INFO 22268 --- [quartzScheduler_Worker-5] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:56:02.280  INFO 22268 --- [quartzScheduler_Worker-5] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:56:02.280 DEBUG 22268 --- [quartzScheduler_Worker-5] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:56:02.280 DEBUG 22268 --- [quartzScheduler_Worker-5] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:56:32.278  INFO 22268 --- [quartzScheduler_Worker-6] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:56:32.281  INFO 22268 --- [quartzScheduler_Worker-6] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:56:32.281 DEBUG 22268 --- [quartzScheduler_Worker-6] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:56:32.281 DEBUG 22268 --- [quartzScheduler_Worker-6] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:57:02.280  INFO 22268 --- [quartzScheduler_Worker-7] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:57:02.286  INFO 22268 --- [quartzScheduler_Worker-7] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:57:02.286 DEBUG 22268 --- [quartzScheduler_Worker-7] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:57:02.286 DEBUG 22268 --- [quartzScheduler_Worker-7] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:57:32.283  INFO 22268 --- [quartzScheduler_Worker-8] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:57:32.291  INFO 22268 --- [quartzScheduler_Worker-8] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:57:32.292 DEBUG 22268 --- [quartzScheduler_Worker-8] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:57:32.292 DEBUG 22268 --- [quartzScheduler_Worker-8] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:58:02.282  INFO 22268 --- [quartzScheduler_Worker-9] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:58:02.291  INFO 22268 --- [quartzScheduler_Worker-9] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:58:02.292 DEBUG 22268 --- [quartzScheduler_Worker-9] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:58:02.292 DEBUG 22268 --- [quartzScheduler_Worker-9] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:58:32.284  INFO 22268 --- [quartzScheduler_Worker-10] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:58:32.294  INFO 22268 --- [quartzScheduler_Worker-10] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:58:32.295 DEBUG 22268 --- [quartzScheduler_Worker-10] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:58:32.295 DEBUG 22268 --- [quartzScheduler_Worker-10] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:59:02.283  INFO 22268 --- [quartzScheduler_Worker-1] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:59:02.292  INFO 22268 --- [quartzScheduler_Worker-1] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:59:02.293 DEBUG 22268 --- [quartzScheduler_Worker-1] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:59:02.293 DEBUG 22268 --- [quartzScheduler_Worker-1] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 11:59:32.283  INFO 22268 --- [quartzScheduler_Worker-2] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 11:59:32.292  INFO 22268 --- [quartzScheduler_Worker-2] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 11:59:32.293 DEBUG 22268 --- [quartzScheduler_Worker-2] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 11:59:32.293 DEBUG 22268 --- [quartzScheduler_Worker-2] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
+2018-10-20 12:00:02.279  INFO 22268 --- [quartzScheduler_Worker-3] com.zxh.weather.job.WeatherDataSyncJob   : WeatherDataSyncJob 
+2018-10-20 12:00:02.283  INFO 22268 --- [quartzScheduler_Worker-3] c.z.w.s.impl.WeatherDateServiceImpl      : 正在存入缓存：101010100
+2018-10-20 12:00:02.283 DEBUG 22268 --- [quartzScheduler_Worker-3] o.s.web.client.RestTemplate              : Created GET request for "http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
+2018-10-20 12:00:02.284 DEBUG 22268 --- [quartzScheduler_Worker-3] o.s.web.client.RestTemplate              : Setting request Accept header to [text/plain, text/plain, application/json, application/json, application/*+json, application/*+json, */*, */*]
