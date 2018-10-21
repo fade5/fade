@@ -2,6 +2,7 @@ package com.zxh.weather.vo;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -20,6 +21,7 @@ import java.util.List;
 @Getter
 @XmlRootElement(name = "c")
 @XmlAccessorType(XmlAccessType.FIELD)
+@ToString
 public class CityList {
     @XmlElement(name = "d")
     private List<City> city;

@@ -23,7 +23,7 @@ public class QuaetzConfigturaion {
     public Trigger getTrigger(){
         SimpleScheduleBuilder simpleScheduleBuilder=
                 SimpleScheduleBuilder.simpleSchedule().
-                        withIntervalInSeconds(30).repeatForever();
+                        withIntervalInSeconds(30*60*60*60).repeatForever();
         return TriggerBuilder.newTrigger().withIdentity("weatherDataSyncTrigger").forJob(getJobDetail()).withSchedule(simpleScheduleBuilder).build();
     }
 }

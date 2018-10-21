@@ -1,7 +1,9 @@
 package com.zxh.weather.controller;
 
 import com.zxh.weather.service.CityDateService;
+import com.zxh.weather.service.DataClient;
 import com.zxh.weather.service.WeatherDateService;
+import com.zxh.weather.vo.City;
 import com.zxh.weather.vo.CityList;
 import com.zxh.weather.vo.WeatherResponse;
 import com.zxh.weather.bean.YmlConfig;
@@ -12,10 +14,16 @@ import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author zxh
@@ -34,6 +42,9 @@ public class WeatherDateController {
     private WeatherDateService weatherDateService;
     @Autowired
     private CityDateService cityDateService;
+
+    @Autowired
+    private DataClient dataClient;
     /**
     　　* @Description: 通过城市id查找 天气信息
     　　* @param id  城市id
@@ -45,10 +56,23 @@ public class WeatherDateController {
     @ApiOperation(value = "通过城市id查找天气信息", notes = "查询远程城市天气信息")
     @ApiImplicitParam(name = "cityId", value = "城市ID", paramType = "path", required = true, dataType = "String")
     @GetMapping("/cityId/{cityId}")
-    public  WeatherResponse getWeatherDateById(@PathVariable("cityId") String id){
-        WeatherResponse weatherResponse=weatherDateService.getWeatherDateById(id);
+    public Map<String,Object> getWeatherDateById(@PathVariable("cityId") String id){
+        // 获取城市ID列表
+        List<City> cityList = null;
+        HashMap<String,Object>map=new HashMap<String,Object>();
+        try {
 
-        return weatherResponse;
+          cityList=cityDateService.getListCity().getCity();
+
+        } catch (Exception e) {
+            log.error("Exception!", e);
+        }
+
+        map.put("title", "老卫的天气预报");
+        map.put("cityId", id);
+        map.put("cityList", cityList);
+        map.put("report", weatherDateService.getWeatherDateById(id));
+       return map;
     }
 
     @GetMapping("/cityName/{cityName}")
